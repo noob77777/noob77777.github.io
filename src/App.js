@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Home from './components/Main/Home/Home';
+import Loader from './components/Loader/Loader';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { loading: true };
+    this.toggleState = this.toggleState.bind(this);
+  }
+
+  toggleState() {
+    const loading = this.state.loading ? false : true;
+    this.setState({ loading })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        {this.state.loading ? <Loader toggleState={this.toggleState} /> : <Home />}
+      </div>
+    );
+  }
 }
 
 export default App;

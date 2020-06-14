@@ -1,0 +1,45 @@
+@import "../../common.module.scss";
+
+.Loader {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: $white;
+  color: $red;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: normal;
+    animation: grow 1s linear;
+  }
+
+  .loader {
+    border: 0.25rem solid $red;
+    border-top: 0.25rem solid $white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes grow {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
