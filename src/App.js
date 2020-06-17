@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import Home from './components/Main/Home/Home';
-import Loader from './components/Loader/Loader';
+import React, { Component } from "react";
+import Home from "./components/Main/Home/Home";
+import Loader from "./components/Loader/Loader";
+import M from "materialize-css";
 
 class App extends Component {
   constructor(props) {
@@ -9,15 +10,23 @@ class App extends Component {
     this.toggleState = this.toggleState.bind(this);
   }
 
+  componentDidMount() {
+    M.AutoInit();
+  }
+
   toggleState() {
     const loading = this.state.loading ? false : true;
-    this.setState({ loading })
+    this.setState({ loading });
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.loading ? <Loader toggleState={this.toggleState} /> : <Home />}
+        {this.state.loading ? (
+          <Loader toggleState={this.toggleState} />
+        ) : (
+          <Home />
+        )}
       </div>
     );
   }

@@ -1,0 +1,32 @@
+@import "../../../common.module.scss";
+
+.Header {
+  background-image: url("../../../img/header.jpg"),
+    linear-gradient(to bottom, #ffffff00, #000000);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  div {
+    color: $white;
+    text-align: center;
+    h1,
+    h5,
+    h6 {
+      font-weight: lighter;
+    }
+  }
+}
+
+.displayPicture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: $dark-blue;
+  margin: auto;
+}
