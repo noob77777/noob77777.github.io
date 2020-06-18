@@ -6,27 +6,45 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.menuItems = [
-      <li>
+      <li key="Home">
         <a href="#header">Home</a>
       </li>,
     ];
   }
   componentDidMount() {
     M.AutoInit();
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("Navbar");
+      if (window.scrollY > 555) {
+        navbar.classList.remove("transparent");
+        navbar.classList.add("solid-nav");
+      } else {
+        navbar.classList.remove("solid-nav");
+        navbar.classList.add("transparent");
+      }
+    });
   }
 
   render() {
     return (
-      <nav className={styles.Navbar + " Navbar nav-wrapper transparent"}>
+      <nav
+        className={styles.Navbar + " Navbar nav-wrapper transparent"}
+        id="Navbar"
+      >
         <div className="container">
           <a href="#header" className="brand-logo">
             noob77777
           </a>
-          <a href="#" className="sidenav-trigger" data-target="mobile-menu">
+          <a
+            href="#Navbar"
+            className="sidenav-trigger"
+            data-target="mobile-menu"
+          >
             <i className="material-icons">menu</i>
           </a>
           <ul className="right hide-on-med-and-down">{this.menuItems}</ul>
           <ul className={styles.sidenav + " sidenav"} id="mobile-menu">
+            <br />
             {this.menuItems}
           </ul>
         </div>

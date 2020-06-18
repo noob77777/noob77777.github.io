@@ -1,8 +1,9 @@
 @import "../../../common.module.scss";
 
 .Header {
-  background-image: url("../../../img/header.jpg"),
-    linear-gradient(to bottom, #ffffff00, #000000);
+  background-image: linear-gradient(to bottom, #00000000, #00000040, #000000b0),
+    url("../../../img/header.jpg");
+
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -21,12 +22,20 @@
       font-weight: lighter;
     }
   }
+
+  .downwardArrow {
+    color: $white;
+    position: absolute;
+    bottom: 25px;
+  }
 }
 
 .displayPicture {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: $dark-blue;
+  background-image: url("../../../img/me.jpg");
+  background-position: center;
+  background-size: cover;
   margin: auto;
 }
