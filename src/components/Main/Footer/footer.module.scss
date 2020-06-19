@@ -10,13 +10,15 @@
     p {
       font-weight: lighter;
     }
+    a {
+      color: $red;
+    }
   }
   .connect {
     color: $red;
     ul {
       a {
         color: $red;
-        font-weight: lighter;
       }
     }
   }

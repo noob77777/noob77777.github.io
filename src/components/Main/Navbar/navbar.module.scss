@@ -13,12 +13,11 @@
       font-size: medium;
     }
   }
+  z-index: 1000;
 }
 
 :global(.sidenav-overlay) {
   position: fixed;
-  left: 300px;
-  width: 100%;
 }
 
 :global(.solid-nav) {

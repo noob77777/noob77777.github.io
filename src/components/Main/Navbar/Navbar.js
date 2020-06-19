@@ -9,6 +9,12 @@ class Navbar extends Component {
       <li key="Home">
         <a href="#header">Home</a>
       </li>,
+      <li key="CP">
+        <a href="#cp-main">Competitive Programming</a>
+      </li>,
+      <li key="Contact">
+        <a href="#contact-main">Contact</a>
+      </li>,
     ];
   }
   componentDidMount() {

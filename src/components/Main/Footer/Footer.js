@@ -8,12 +8,20 @@ class Footer extends Component {
         <div className="container">
           <div className="row">
             <div className={styles.aboutMe + " col l6 s12"}>
-              <h5>About Me</h5>
+              <h5>Want to know how this page was made?</h5>
               <p>
-                Loves taking on challenges and solving complex problems. Always
-                eager to learn new technologies and methodologies.
+                Checkout the Github repository. Make sure you have the dev
+                branch selected.
               </p>
-              <p>A fast and willing learner with the ability to self-learn.</p>
+              <a
+                href="https://github.com/noob77777/noob77777.github.io/tree/dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="material-icons">call_made</i>
+                <br />
+                Github
+              </a>
             </div>
             <div className={styles.connect + " col l4 offset-l2 s12"}>
               <h5>Connect</h5>

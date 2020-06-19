@@ -1,0 +1,100 @@
+@import "../../../common.module.scss";
+
+.Contact {
+  .parallax {
+    background-image: url("../../../img/parallax2.jpg");
+    height: 40vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  color: $red;
+  h2,
+  h6 {
+    font-weight: lighter;
+  }
+  .myContact {
+    .material-icons {
+      display: inline-flex;
+      vertical-align: bottom;
+    }
+    .contactDiv {
+      font-weight: normal;
+    }
+  }
+
+  /* label color */
+  :global(.input-field label) {
+    color: $red;
+  }
+  /* label focus color */
+  :global(.input-field input[type="text"]:focus + label) {
+    color: $red;
+  }
+  /* label underline focus color */
+  :global(.input-field input[type="text"]:focus) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* valid color */
+  :global(.input-field input[type="text"].valid) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* invalid color */
+  :global(.input-field input[type="text"].invalid) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* icon prefix focus color */
+  :global(.input-field .prefix.active) {
+    color: $dark-red;
+  }
+  :global(.input-field .prefix) {
+    color: $red;
+  }
+  /* label focus color */
+  :global(.input-field input[type="email"]:focus + label) {
+    color: $red;
+  }
+  /* label underline focus color */
+  :global(.input-field input[type="email"]:focus) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* valid color */
+  :global(.input-field input[type="email"].valid) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* invalid color */
+  :global(.input-field input[type="email"].invalid) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* label focus color */
+  :global(.input-field textarea:focus + label) {
+    color: $red;
+  }
+  /* label underline focus color */
+  :global(.input-field textarea:focus) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* valid color */
+  :global(.input-field textarea.valid) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+  /* invalid color */
+  :global(.input-field textarea.invalid) {
+    border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
+  }
+
+  .findbtn {
+    background-color: $red !important;
+  }
+  .findbtn:hover {
+    background-color: $dark-red !important;
+  }
+}

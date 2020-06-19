@@ -16,7 +16,7 @@
   div {
     color: $white;
     text-align: center;
-    h1,
+    h2,
     h5,
     h6 {
       font-weight: lighter;
@@ -24,18 +24,22 @@
   }
 
   .downwardArrow {
-    color: $white;
+    a {
+      color: $white;
+    }
     position: absolute;
     bottom: 25px;
+    left: 0px;
+    width: 100%;
   }
-}
 
-.displayPicture {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-image: url("../../../img/me.jpg");
-  background-position: center;
-  background-size: cover;
-  margin: auto;
+  .displayPicture {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url("../../../img/me.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+  }
 }

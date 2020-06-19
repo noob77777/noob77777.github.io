@@ -1,0 +1,49 @@
+@import "../../../common.module.scss";
+
+.CP {
+  min-height: 100vh;
+  background-color: $white;
+
+  h3,
+  h2,
+  p {
+    font-weight: lighter;
+  }
+
+  h3,
+  h2 {
+    color: $red;
+  }
+
+  .introduction {
+    .introductionLeft {
+      display: flex;
+      min-height: 400px;
+      justify-content: center;
+      align-items: center;
+      strong {
+        color: $red;
+      }
+    }
+  }
+
+  .parallax {
+    background-image: url("../../../img/parallax1.jpg");
+    height: 40vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .cpHeader {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    .cpHeader {
+      text-align: left;
+    }
+  }
+
+  .contests {
+    height: 60vh;
+  }
+}
