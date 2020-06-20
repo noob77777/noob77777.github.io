@@ -30,7 +30,7 @@ class Achievements extends Component {
         </p>
         <p>
           <strong>IEM, Kolkata</strong>
-          <br /> IEMCO, 2nd Runner's Up (2020)
+          <br /> IEMCO, Runner's Up (2020)
         </p>
         <p>
           <strong>Amity University</strong>
@@ -39,7 +39,7 @@ class Achievements extends Component {
         <p>
           <strong>Netaji Subhash Engineering College, Kolkata</strong>
           <br /> Debugger, Winner (2020)
-          <br /> Encoding, 2nd Runner's Up (2020)
+          <br /> Encoding, Runner's Up (2020)
         </p>
         <p>
           <strong>Heritage Institute of Technology, Kolkata</strong>

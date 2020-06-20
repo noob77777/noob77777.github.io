@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./timeline.module.scss";
-import TimelineComponent from "./TimlineComponent";
+import TimelineComponent from "./TimelineComponent";
 import Astronaut from "./Astronaut";
 
 class Timeline extends Component {
