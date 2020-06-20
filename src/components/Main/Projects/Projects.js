@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "./projects.module.scss";
-import { Link } from "react-router-dom";
 
 class Projects extends Component {
   render() {
@@ -9,7 +8,10 @@ class Projects extends Component {
         <br />
         <br />
         <div id="projects-main" className="container">
-          <Link to="/sad">Click</Link>
+          <div className="row">
+            <div className="col s12 l6"></div>
+            <div className="col s12 l6"></div>
+          </div>
         </div>
       </div>
     );
