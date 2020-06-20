@@ -51,7 +51,9 @@ class Contact extends Component {
                 <div className="input-field center">
                   <button
                     className={styles.findbtn + " btn"}
-                    onClick={() => {}}
+                    onClick={(event) => {
+                      event.preventDefault();
+                    }}
                   >
                     Submit
                   </button>

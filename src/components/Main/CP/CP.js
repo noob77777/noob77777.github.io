@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "./cp.module.scss";
 import Astronaut from "./Astronaut";
+import Achievements from "./Achievements";
 
 class CP extends Component {
   render() {
@@ -16,18 +17,14 @@ class CP extends Component {
                   <h3>Hi, I'm Abhishek!</h3>
                   <p>
                     I am a sophomore at <strong>Jadavpur University</strong>,{" "}
-                    majoring in{" "}
-                    <strong>
-                      Computer Science and Engineering (expected 2022)
-                    </strong>
+                    majoring in Computer Science and Engineering (expected 2022)
                     . I am also interning with competitive programming site{" "}
                     <strong>CodeChef, Directi</strong> as a software engineer.
                   </p>
                   <p>
                     I like <strong>Competitive Programming</strong> and have
-                    spent most of my time in college on sites like{" "}
-                    <strong>CodeChef</strong> and <strong>Codeforces</strong>. I
-                    also like <strong>Web Development</strong> and{" "}
+                    spent most of my time in college on sites like CodeChef and
+                    Codeforces. I also like <strong>Web Development</strong> and{" "}
                     <strong> Databases</strong>.
                   </p>
                 </div>
@@ -43,6 +40,7 @@ class CP extends Component {
 
         <div id="cp-main" className="container">
           <br />
+          <br />
           <div className="row">
             <div className={styles.cpHeader + " col s12"}>
               <h2>Competitive Programming</h2>
@@ -51,29 +49,28 @@ class CP extends Component {
           <div className="row">
             <div className={styles.cpIntroduction + " col s12 l6"}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I started with competitive programming in 2018 after my JEE
+                exams. I am currently rated <strong>Candidate Master</strong> on
+                Codeforces and <strong>6 ★</strong> on CodeChef.
               </p>
+              <br />
+              <h5>
+                Team LongTimeNoShe at <br />
+                2019 ASIA AMRITAPURI ONSITE REGIONAL CONTEST
+              </h5>
+              <div className={styles.icpc}>
+                <img
+                  src={require("../../../img/icpc.jpg")}
+                  alt=""
+                  class="responsive-img materialboxed"
+                ></img>
+              </div>
             </div>
             <div className={styles.contests + " col s12 l6"}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <Achievements />
             </div>
           </div>
         </div>
-        <br />
         <br />
       </div>
     );

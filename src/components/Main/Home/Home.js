@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import CP from "../CP/CP";
 import Footer from "../Footer/Footer";
 import Contact from "../Contact/Contact";
+import Timeline from "../Timeline/Timeline";
 
 class Home extends Component {
   render() {
@@ -13,6 +14,7 @@ class Home extends Component {
         <Navbar />
         <Header />
         <CP />
+        <Timeline />
         <Contact />
         <Footer />
       </div>

@@ -1,0 +1,48 @@
+@import "../../../common.module.scss";
+
+.Timeline {
+  min-height: 100vh;
+  background-color: $dark-blue;
+
+  h3,
+  h2,
+  h5,
+  p {
+    font-weight: lighter;
+  }
+
+  h3,
+  h2 {
+    color: $red;
+  }
+
+  strong {
+    color: $red;
+  }
+
+  .timelineMain {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+  }
+
+  .timelineRight {
+    padding-top: 5vh;
+    padding-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timelineHeader {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    .timelineHeader {
+      text-align: left;
+    }
+  }
+}

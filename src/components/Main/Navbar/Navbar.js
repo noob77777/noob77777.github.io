@@ -12,6 +12,9 @@ class Navbar extends Component {
       <li key="CP">
         <a href="#cp-main">Competitive Programming</a>
       </li>,
+      <li key="Timeline">
+        <a href="#timeline-main">Timeline</a>
+      </li>,
       <li key="Contact">
         <a href="#contact-main">Contact</a>
       </li>,
