@@ -1,17 +1,12 @@
 import React, { Component } from "react";
 import Home from "./components/Main/Home/Home";
 import Loader from "./components/Loader/Loader";
-import M from "materialize-css";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = { loading: true };
     this.toggleState = this.toggleState.bind(this);
-  }
-
-  componentDidMount() {
-    M.AutoInit();
   }
 
   toggleState() {

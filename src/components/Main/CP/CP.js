@@ -36,7 +36,7 @@ class CP extends Component {
           </div>
         </div>
 
-        <div class={styles.parallax}></div>
+        <div className={styles.parallax}></div>
 
         <div id="cp-main" className="container">
           <br />
@@ -62,7 +62,7 @@ class CP extends Component {
                 <img
                   src={require("../../../img/icpc.jpg")}
                   alt=""
-                  class="responsive-img materialboxed"
+                  className="responsive-img materialboxed"
                 ></img>
               </div>
             </div>
