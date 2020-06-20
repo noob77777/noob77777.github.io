@@ -1,5 +1,35 @@
 @import "../../../common.module.scss";
 
 .Projects {
-  min-height: 110vh;
+  min-height: 90vh;
+  color: $red;
+
+  .projectsHeader {
+    text-align: center;
+    h2 {
+      font-weight: lighter;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .projectsHeader {
+      text-align: left;
+    }
+  }
+
+  .card {
+    background-color: $white;
+    :global(.card-action) {
+      background-color: $red;
+    }
+  }
+
+  #link {
+    color: $white;
+    padding: 8px 25px;
+    border-radius: 2px;
+  }
+  #link:hover {
+    background-color: $dark-red;
+  }
 }

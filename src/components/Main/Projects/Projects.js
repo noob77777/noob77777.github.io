@@ -5,12 +5,80 @@ class Projects extends Component {
   render() {
     return (
       <div className={styles.Projects + " Projects"}>
-        <br />
-        <br />
         <div id="projects-main" className="container">
+          <br />
+          <br />
           <div className="row">
-            <div className="col s12 l6"></div>
-            <div className="col s12 l6"></div>
+            <div className={styles.projectsHeader + " col s12"}>
+              <h2>Projects</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col s12 l5">
+              <div className={styles.card + " card"}>
+                <div className="card-image waves-effect waves-block waves-light">
+                  <img
+                    className="activator"
+                    src={require("../../../img/firebird.png")}
+                    alt=""
+                  />
+                </div>
+                <div className="card-content">
+                  <span className="card-title activator">
+                    Firebird
+                    <i className="material-icons right">arrow_drop_up</i>
+                  </span>
+                  <p>Real time messenger</p>
+                </div>
+                <div className="card-action">
+                  <a
+                    href="https://noob77777.github.com/firebird.github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id={styles.link}
+                  >
+                    Link
+                  </a>
+                </div>
+                <div className="card-reveal">
+                  <span className="card-title">
+                    FireBird<i className="material-icons right">close</i>
+                  </span>
+                  <p>Using Bootstrap and Firebase. </p>
+                  <p>Major changes in progress.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col s12 l5 offset-l2">
+              <div className={styles.card + " card"}>
+                <div className="card-image waves-effect waves-block waves-light">
+                  <img
+                    className="activator"
+                    src={require("../../../img/project2.jpg")}
+                    alt=""
+                  />
+                </div>
+                <div className="card-content">
+                  <span className="card-title activator ">
+                    Deep Learning in C++
+                    <i className="material-icons right">arrow_drop_up</i>
+                  </span>
+                  <p>Work in progress...</p>
+                </div>
+                <div className="card-action">
+                  <a href="/#projects-main" id={styles.link}>
+                    Link
+                  </a>
+                </div>
+                <div className="card-reveal">
+                  <span className="card-title">
+                    Deep Learning in C++
+                    <i className="material-icons right">close</i>
+                  </span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
