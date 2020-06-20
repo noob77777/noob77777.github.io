@@ -32,7 +32,7 @@ class Projects extends Component {
                 </div>
                 <div className="card-action">
                   <a
-                    href="https://noob77777.github.com/firebird.github.com"
+                    href="https://noob77777.github.io/firebird.github.io"
                     target="_blank"
                     rel="noopener noreferrer"
                     id={styles.link}
