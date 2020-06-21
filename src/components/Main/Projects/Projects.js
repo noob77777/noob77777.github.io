@@ -44,10 +44,18 @@ class Projects extends Component {
                   <span className="card-title">
                     FireBird<i className="material-icons right">close</i>
                   </span>
-                  <p>Using Bootstrap and Firebase. </p>
-                  <p>Major changes in progress.</p>
+                  <p>
+                    Created using Bootstrap and Firebase real-time database.{" "}
+                  </p>
+                  <p>
+                    Major changes in progress. Shifting to React, Express and
+                    MongoDB.
+                    <br /> User Interface changes pending.
+                  </p>
                 </div>
               </div>
+              <br />
+              <br />
             </div>
             <div className="col s12 l5 offset-l2">
               <div className={styles.card + " card"}>
@@ -78,6 +86,8 @@ class Projects extends Component {
                   <p></p>
                 </div>
               </div>
+              <br />
+              <br />
             </div>
           </div>
         </div>

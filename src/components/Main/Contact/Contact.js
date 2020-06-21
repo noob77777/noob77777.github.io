@@ -13,6 +13,7 @@ class Contact extends Component {
     this.handleChangeName = this.handleChangeName.bind(this);
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
     this.handleChangeMessage = this.handleChangeMessage.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChangeName(event) {
@@ -31,6 +32,28 @@ class Contact extends Component {
     this.setState({
       form: { ...this.state.form, message: event.target.value },
     });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    document.getElementById("submit").innerText = " . . . ";
+    setTimeout(() => {
+      document.getElementById("submit").innerText = "SUBMIT";
+      this.setState({
+        form: {
+          name: "",
+          email: "",
+          message: "",
+        },
+      });
+      for (
+        let label = document.getElementsByTagName("label"), i = label.length;
+        i--;
+
+      ) {
+        label[i].classList.remove("active");
+      }
+    }, 1000);
   }
 
   render() {
@@ -93,10 +116,9 @@ class Contact extends Component {
                 </div>
                 <div className="input-field center">
                   <button
+                    id="submit"
                     className={styles.findbtn + " btn"}
-                    onClick={(event) => {
-                      event.preventDefault();
-                    }}
+                    onClick={this.handleSubmit}
                   >
                     Submit
                   </button>
