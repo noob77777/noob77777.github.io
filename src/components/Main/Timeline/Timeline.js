@@ -31,6 +31,7 @@ class Timeline extends Component {
               </div>
             </div>
           </div>
+          <br />
         </div>
       </div>
     );

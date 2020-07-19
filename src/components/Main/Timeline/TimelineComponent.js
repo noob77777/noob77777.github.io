@@ -10,7 +10,7 @@ class Timeline extends Component {
             <li>
               <div>
                 <span></span>
-                <div className={styles.title}>Codechef</div>
+                <div className={styles.title}>CodeChef</div>
                 <div className={styles.info}>Software Engineering Intern</div>
                 <div className={styles.type}>May - Present</div>
               </div>{" "}

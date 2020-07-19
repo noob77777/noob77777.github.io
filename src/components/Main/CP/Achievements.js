@@ -23,6 +23,11 @@ class Achievements extends Component {
           <br /> OdeToCode, Winner (2019)
         </p>
         <p>
+          <strong>Techno India, Salt Lake</strong>
+          <br /> Flawless, Winner (2020)
+          <br /> Bughunt, Winner (2020)
+        </p>
+        <p>
           <strong>UEM, Kolkata</strong>
           <br /> CodeRanch, Winner (2020)
           <br /> CodeGolf, Winner (2020)
