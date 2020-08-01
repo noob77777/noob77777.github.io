@@ -1,0 +1,33 @@
+@import '../../../common.module.scss';
+
+.Skills {
+    min-height: 100vh;
+    background-color: $red;
+    color: $white;
+
+    h3,
+    h2,
+    h5,
+    p {
+        font-weight: lighter;
+    }
+
+    strong {
+        color: $dark-blue;
+    }
+
+    .header {
+        text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+        .header {
+            text-align: left;
+        }
+    }
+
+    .circleCol {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+}
