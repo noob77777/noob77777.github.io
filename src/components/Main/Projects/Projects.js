@@ -19,22 +19,25 @@ class Projects extends Component {
                                 <div className="card-image waves-effect waves-block waves-light">
                                     <img
                                         className="activator"
-                                        src={require("../../../img/firebird.png")}
+                                        src={require("../../../img/project1.jpg")}
                                         alt=""
                                     />
                                 </div>
                                 <div className="card-content">
                                     <span className="card-title activator">
-                                        Firebird
+                                        OS-ONE
                                         <i className="material-icons right">
                                             arrow_drop_up
                                         </i>
                                     </span>
-                                    <p>Real time messenger</p>
+                                    <p>
+                                        A light weight Operating System for x86
+                                        architecture
+                                    </p>
                                 </div>
                                 <div className="card-action">
                                     <a
-                                        href="https://noob77777.github.io/firebird.github.io"
+                                        href="https://github.com/noob77777/os-one"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         id={styles.link}
@@ -44,23 +47,35 @@ class Projects extends Component {
                                 </div>
                                 <div className="card-reveal">
                                     <span className="card-title">
-                                        FireBird
+                                        OS-ONE
                                         <i className="material-icons right">
                                             close
                                         </i>
                                     </span>
                                     <p>
-                                        Created using Bootstrap and Firebase
-                                        real-time database.{" "}
+                                        Kernel built from ground up. <br />
+                                        Written in C++ and asm for optimal
+                                        memory <br />
+                                        management.
                                     </p>
                                     <p>
-                                        Major changes in progress. Shifting to
-                                        React, Express and MongoDB.
-                                        <br /> User Interface changes pending.
+                                        Supports virtual memory and dynamic
+                                        memory management. <br />
+                                        Device drivers written from scratch.
+                                        Comes with a <br />
+                                        FAT based filesystem and text editor.
                                     </p>
                                     <p>
-                                        Not exacty proud of the present
-                                        architecture.
+                                        A software development suite with a{" "}
+                                        <br />
+                                        compiler and linking loader in
+                                        development.
+                                    </p>
+                                    <p>
+                                        Networking and support for TCP and UDP
+                                        to be added
+                                        <br />
+                                        soon.
                                     </p>
                                 </div>
                             </div>
@@ -120,9 +135,7 @@ class Projects extends Component {
                                         Serializable objects to save trained
                                         models.
                                     </p>
-                                    <p>
-                                        Checkout the github repository.
-                                    </p>
+                                    <p>Checkout the github repository.</p>
                                 </div>
                             </div>
                             <br />

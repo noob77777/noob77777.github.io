@@ -37,14 +37,14 @@ class Skills extends Component {
                             <h5>ReactJS, NodeJS, PHP, MySQL</h5>
                         </div>
                         <div className={'col s12 l4 ' + styles.circleCol}>
-                            <div className='c100 p60 big center'>
-                                <span>3/5</span>
+                            <div className='c100 p80 big center'>
+                                <span>4/5</span>
                                 <div className='slice'>
                                     <div className='bar'></div>
                                     <div className='fill'></div>
                                 </div>
                             </div>
-                            <h5>Database Systems</h5>
+                            <h5>Operating Systems</h5>
                         </div>
                     </div>
                 </div>

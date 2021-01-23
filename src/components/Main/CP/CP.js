@@ -18,14 +18,14 @@ class CP extends Component {
                   <p>
                     I am a sophomore at <strong>Jadavpur University</strong>,{" "}
                     majoring in Computer Science and Engineering (expected 2022)
-                    . I am also interning with competitive programming site{" "}
-                    <strong>CodeChef, Directi</strong> as a software engineer.
+                    . I also interned with competitive programming platform{" "}
+                    <strong>CodeChef</strong> as a software engineer.
                   </p>
                   <p>
                     I like <strong>Competitive Programming</strong> and have
                     spent most of my time in college on sites like CodeChef and
-                    Codeforces. I also like <strong>Web Development</strong> and{" "}
-                    <strong> Databases</strong>.
+                    Codeforces. I also like <strong>Web Development</strong>,{" "}
+                    <strong> Operating Systems</strong> and <strong>Databases</strong>
                   </p>
                 </div>
               </div>
